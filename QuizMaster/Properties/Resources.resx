@@ -1,0 +1,889 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Porsche_911_GT3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Porsche_911_GT3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_exit_anyway_exit_quiz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_exit_anyway_exit_quiz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unitedstates" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unitedstates.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mali" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mali1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_hall_of_shame_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_hall_of_shame_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ford" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ford.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_exit_anyway_exit_quiz_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_exit_anyway_exit_quiz_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rapidfire_answer_b_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rapidfire_answer_b_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="china" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\china.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lifeline_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lifeline_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="answer_d_correct" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\answer_d_correct.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Genesis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Genesis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="overlay_forgot_password" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\overlay_forgot_password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_continue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_continue1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flags_category" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flags_category1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="answer_a_wrong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\answer_a_wrong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_login_overlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_login_overlay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Toyota_Supra_MK4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Toyota_Supra_MK4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cars_answer_b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cars_answer_b2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="newzealand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\newzealand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lamborghini_Aventador" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lamborghini_Aventador.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Audi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Audi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_general_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_general_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ferrari" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ferrari.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rapidfire_answer_d_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rapidfire_answer_d_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flags_answer_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flags_answer_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_flags_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_flags_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bahrain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bahrain1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="portugal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\portugal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_exit_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_exit_hover1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_flags_fame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_flags_fame1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cotedivoire" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cotedivoire.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ford_Mustang_GT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ford_Mustang_GT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lamborghini" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lamborghini.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RAM_TRX" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RAM_TRX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Audi_R8_Side" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Audi_R8_Side.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lincoln_Continental_1965" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lincoln_Continental_1965.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mixed_answer_b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mixed_answer_b1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_mixed_shame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_mixed_shame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="car_dodge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\car_dodge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_cars_shame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_cars_shame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="serbia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\serbia1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dodge_Viper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dodge_Viper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flags_answer_b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flags_answer_b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_show_password_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_show_password_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mixed_answer_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mixed_answer_d1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sudan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sudan1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="egypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\egypt1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guinea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\guinea1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="qatar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\qatar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ferrari_488" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ferrari_488.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="brazil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\brazil2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="motto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\motto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="McLaren" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\McLaren.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_hall_of_fame_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_hall_of_fame_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cars_answer_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cars_answer_d2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="japan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\japan2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="israel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\israel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="northkorea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\northkorea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\canada2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_register_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_register_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="netherlands" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\netherlands2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_info_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_info_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="background_fame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background_fame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="background_category" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background_category1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="greece" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\greece1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rapidfire_answer_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rapidfire_answer_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rolls_Royce_Phantom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rolls_Royce_Phantom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_general_shame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_general_shame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="monaco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\monaco1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="turkey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\turkey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_rapidfire_fame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_rapidfire_fame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rapidfire_category" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rapidfire_category.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jeep_Wrangler" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Jeep_Wrangler.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="answer_c_correct" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\answer_c_correct.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_show_password" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_show_password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Infiniti" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Infiniti.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="overlay_register" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\overlay_register.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mixed_answer_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mixed_answer_a1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mixed_answer_a_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mixed_answer_a_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rolls-Royce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rolls-Royce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="McLaren_P1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\McLaren_P1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stop_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stop_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="argentina" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\argentina1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lifeline_button_locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lifeline_button_locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_guest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_guest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="overlay_gues" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\overlay_gues.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Honda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Honda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rapidfire_answer_a_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rapidfire_answer_a_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_leaderboard_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_leaderboard_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="result_leaderboard_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\result_leaderboard_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="italy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\italy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_rapidfire_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_rapidfire_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lexus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lexus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="overlay_requirements" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\overlay_requirements2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_guest_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_guest_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Nissan_Skyline_R34" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Nissan_Skyline_R34.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cars_category" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cars_category1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="belgium" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\belgium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="result_exit_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\result_exit_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chevrolet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chevrolet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="background_shame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background_shame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="answer_b_correct" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\answer_b_correct.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_general_fame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_general_fame2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flags_answer_a_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flags_answer_a_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dodge_Durango_Hellcat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dodge_Durango_Hellcat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="top_10_panel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\top_10_panel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="romania" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\romania1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BMW_M8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BMW_M8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="overlay_login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\overlay_login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_cancel_exit_quiz_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_cancel_exit_quiz_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chevrolet_Camaro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chevrolet_Camaro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_back_hover1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_back_hover1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chad1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_rotating_arrows" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_rotating_arrows.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="overlay_login_failed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\overlay_login_failed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_cancel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_login_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_login_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_hall_of_fame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_hall_of_fame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="syria" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syria1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ford_F150_Raptor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ford_F150_Raptor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="southkorea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\southkorea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_back_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_back_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_forgot_password_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_forgot_password_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="slovenia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\slovenia1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_mixed_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_mixed_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="france" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\france.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cars_answer_b_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cars_answer_b_hover1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="car_bmw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\car_bmw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GMC_Sierra_Denali_Front" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GMC_Sierra_Denali_Front.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="russia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\russia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aston_Martin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Aston_Martin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_sittings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_sittings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_hall_of_shame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_hall_of_shame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flags_answer_c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flags_answer_c.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="australia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\australia1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_mixed_fame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_mixed_fame2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_hide_password_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_hide_password_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_forgot_password" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_forgot_password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_rotating_arrows_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_rotating_arrows_hover1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Volkswagen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Volkswagen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BMW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BMW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mixed_question_time" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mixed_question_time.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cars_answer_c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cars_answer_c2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flags_category_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flags_category_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_login_overlay_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_login_overlay_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skoda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Skoda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="result_number_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\result_number_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="slovakia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\slovakia1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_logout_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_logout_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cars_category_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cars_category_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_register_overlay_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_register_overlay_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lifeline_button_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lifeline_button_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cars_answer_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cars_answer_a2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_hide_password" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_hide_password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="leaderboard_fame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\leaderboard_fame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_cancel_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_cancel_hover1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dodge_Durango_Headlights" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dodge_Durango_Headlights.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="answer_d_wrong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\answer_d_wrong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rapidfire_answer_b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rapidfire_answer_b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dodge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dodge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unitedkingdom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unitedkingdom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flags_answer_c_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flags_answer_c_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dodge_Challenger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dodge_Challenger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mazda_RX7_FD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mazda_RX7_FD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tunisia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tunisia1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="answer_a_correct" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\answer_a_correct.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Nissan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Nissan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="indonesia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\indonesia1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="skip_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\skip_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rapidfire_category_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rapidfire_category_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_continue_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_continue_hover1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flags_answer_d_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flags_answer_d_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flags_question_time" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flags_question_time.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flags_and_books" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flags_and_books.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dodge_Charger_Headlights" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dodge_Charger_Headlights.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="page_title" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\page_title.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="result_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\result_background2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_info" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cars_question_time" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cars_question_time1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cars_quiz_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cars_quiz_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mixed_answer_c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mixed_answer_c1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yemen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yemen1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rapidfire_result_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rapidfire_result_background1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="answer_b_wrong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\answer_b_wrong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dodge_Challenger_1970" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dodge_Challenger_1970.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ireland" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ireland1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mixed_category" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mixed_category.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="skip_button_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\skip_button_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rapidfire_answer_c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rapidfire_answer_c.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mercedes_Benz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mercedes_Benz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="uae" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\uae.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bentley" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bentley.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="car_mustang" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\car_mustang1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_register" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_register.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mixed_quiz_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mixed_quiz_background1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mixed_answer_c_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mixed_answer_c_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jordan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jordan1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Acura" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Acura.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="morocco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\morocco2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cars_answer_c_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cars_answer_c_hover1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_cancel_exit_quiz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_cancel_exit_quiz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="luxembourg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\luxembourg1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rapidfire_answer_c_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rapidfire_answer_c_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_sittings_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_sittings_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rapidfire_answer_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rapidfire_answer_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Toyota" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Toyota.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cars_answer_d_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cars_answer_d_hover1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="result_exit_button_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\result_exit_button_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="palestine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\palestine1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="play_info" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\play_info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="answer_c_wrong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\answer_c_wrong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="score_info" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\score_info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flags_answer_b_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flags_answer_b_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mixed_category_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mixed_category_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_leaderboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_leaderboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="made_by_me" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\made_by_me.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dodge_Challenger_Taillights" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dodge_Challenger_Taillights.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mixed_answer_d_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mixed_answer_d_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_rapidfire_shame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_rapidfire_shame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cars_answer_a_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cars_answer_a_hover1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rapidfire_quiz_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rapidfire_quiz_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_flags_shame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_flags_shame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="leaderboard_shame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\leaderboard_shame2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_register_overlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_register_overlay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="category_info" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\category_info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\spain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="skip_button_locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\skip_button_locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stop_button_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stop_button_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_cars_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_cars_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="result_number_golden_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\result_number_golden_background1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flags_quiz_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flags_quiz_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rapidfire_question_time" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rapidfire_question_time.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="croatia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\croatia1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_cars_fame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_cars_fame1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mercedes_G63" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mercedes_G63.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flags_answer_d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flags_answer_d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kuwait" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kuwait1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="germany" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\germany.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Maserati" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Maserati.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Corvette" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Corvette.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Porsche" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Porsche.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="result_leaderboard_button_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\result_leaderboard_button_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="overley_stop_game" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\overley_stop_game.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Alfa_Romeo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alfa_Romeo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="car_mercedes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\car_mercedes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ford_Shelby_GT500" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ford_Shelby_GT500.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mixed_answer_b_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mixed_answer_b_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="leaderboard_fame_rapidfire" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\leaderboard_fame_rapidfire.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="leaderboard_shame_rapidfire" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\leaderboard_shame_rapidfire.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="golden_question_sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\golden_question_sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
