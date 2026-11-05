@@ -38,6 +38,7 @@
             lblUsername = new Label();
             picInfoButton = new PictureBox();
             picSwitchCategory = new PictureBox();
+            picAdminButton = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)picFlagsButton).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picMixedButton).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picSettingsButton).BeginInit();
@@ -47,6 +48,7 @@
             ((System.ComponentModel.ISupportInitialize)picLogoutButton).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picInfoButton).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picSwitchCategory).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picAdminButton).BeginInit();
             SuspendLayout();
             // 
             // picFlagsButton
@@ -155,7 +157,7 @@
             lblUsername.AutoSize = true;
             lblUsername.Font = new Font("Cooper Black", 39.75F, FontStyle.Italic, GraphicsUnit.Point, 0);
             lblUsername.ForeColor = Color.Gold;
-            lblUsername.Location = new Point(907, 77);
+            lblUsername.Location = new Point(907, 70);
             lblUsername.Name = "lblUsername";
             lblUsername.Size = new Size(183, 61);
             lblUsername.TabIndex = 8;
@@ -191,12 +193,29 @@
             picSwitchCategory.MouseEnter += picSwitchCategory_MouseEnter;
             picSwitchCategory.MouseLeave += picSwitchCategory_MouseLeave;
             // 
+            // picAdminButton
+            // 
+            picAdminButton.BackgroundImageLayout = ImageLayout.Stretch;
+            picAdminButton.Cursor = Cursors.Hand;
+            picAdminButton.Image = Properties.Resources.button_admin;
+            picAdminButton.Location = new Point(1189, 32);
+            picAdminButton.Name = "picAdminButton";
+            picAdminButton.Size = new Size(149, 132);
+            picAdminButton.SizeMode = PictureBoxSizeMode.StretchImage;
+            picAdminButton.TabIndex = 11;
+            picAdminButton.TabStop = false;
+            picAdminButton.Visible = false;
+            picAdminButton.Click += picAdminButton_Click;
+            picAdminButton.MouseEnter += picAdminButton_MouseEnter;
+            picAdminButton.MouseLeave += picAdminButton_MouseLeave;
+            // 
             // CategorySelection
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.Transparent;
             BackgroundImage = Properties.Resources.background_category;
             BackgroundImageLayout = ImageLayout.Stretch;
+            Controls.Add(picAdminButton);
             Controls.Add(picSwitchCategory);
             Controls.Add(picInfoButton);
             Controls.Add(lblUsername);
@@ -218,6 +237,7 @@
             ((System.ComponentModel.ISupportInitialize)picLogoutButton).EndInit();
             ((System.ComponentModel.ISupportInitialize)picInfoButton).EndInit();
             ((System.ComponentModel.ISupportInitialize)picSwitchCategory).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picAdminButton).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -234,5 +254,6 @@
         private Label lblUsername;
         private PictureBox picInfoButton;
         private PictureBox picSwitchCategory;
+        private PictureBox picAdminButton;
     }
 }

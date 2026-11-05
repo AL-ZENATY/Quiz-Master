@@ -213,6 +213,16 @@ namespace QuizMaster.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap background_admin {
+            get {
+                object obj = ResourceManager.GetObject("background_admin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap background_category {
             get {
                 object obj = ResourceManager.GetObject("background_category", resourceCulture);
@@ -296,6 +306,86 @@ namespace QuizMaster.Properties {
         internal static System.Drawing.Bitmap brazil {
             get {
                 object obj = ResourceManager.GetObject("brazil", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button_accounts {
+            get {
+                object obj = ResourceManager.GetObject("button_accounts", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button_accounts_hover {
+            get {
+                object obj = ResourceManager.GetObject("button_accounts_hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button_add {
+            get {
+                object obj = ResourceManager.GetObject("button_add", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button_add_hover {
+            get {
+                object obj = ResourceManager.GetObject("button_add_hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button_admin {
+            get {
+                object obj = ResourceManager.GetObject("button_admin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button_admin_back {
+            get {
+                object obj = ResourceManager.GetObject("button_admin_back", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button_admin_back_hover {
+            get {
+                object obj = ResourceManager.GetObject("button_admin_back_hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button_admin_hover {
+            get {
+                object obj = ResourceManager.GetObject("button_admin_hover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -416,6 +506,46 @@ namespace QuizMaster.Properties {
         internal static System.Drawing.Bitmap button_continue_hover {
             get {
                 object obj = ResourceManager.GetObject("button_continue_hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button_delete {
+            get {
+                object obj = ResourceManager.GetObject("button_delete", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button_delete_hover {
+            get {
+                object obj = ResourceManager.GetObject("button_delete_hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button_edit {
+            get {
+                object obj = ResourceManager.GetObject("button_edit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button_edit_hover {
+            get {
+                object obj = ResourceManager.GetObject("button_edit_hover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -753,6 +883,26 @@ namespace QuizMaster.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap button_question {
+            get {
+                object obj = ResourceManager.GetObject("button_question", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button_questions_hover {
+            get {
+                object obj = ResourceManager.GetObject("button_questions_hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap button_rapidfire_fame {
             get {
                 object obj = ResourceManager.GetObject("button_rapidfire_fame", resourceCulture);
@@ -836,6 +986,26 @@ namespace QuizMaster.Properties {
         internal static System.Drawing.Bitmap button_rotating_arrows_hover {
             get {
                 object obj = ResourceManager.GetObject("button_rotating_arrows_hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button_save {
+            get {
+                object obj = ResourceManager.GetObject("button_save", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button_save_hover {
+            get {
+                object obj = ResourceManager.GetObject("button_save_hover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

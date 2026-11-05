@@ -161,6 +161,19 @@ namespace QuizMaster
 
             SetUsername(UserSession.Username ?? "GUEST");
 
+            // Check whether the logged-in player is an administrator.
+            bool isAdmin = UserSession.UserId is int userId &&
+                           QuizDatabase.IsUserAdmin(userId);
+
+            picAdminButton.Visible = isAdmin;
+
+            picAdminButton.Click += picAdminButton_Click;
+            picAdminButton.MouseEnter += picAdminButton_MouseEnter;
+            picAdminButton.MouseLeave += picAdminButton_MouseLeave;
+
+            picAdminButton.Image =
+                Properties.Resources.button_admin;
+
             // Remove original fixed-category handlers.
             picFlagsButton.Click -= picFlagsButton_Click;
             picFlagsButton.MouseEnter -= picFlagsButton_MouseEnter;
@@ -395,6 +408,48 @@ namespace QuizMaster
         {
             picTrophyButton.Image =
                 Properties.Resources.button_leaderboard;
+        }
+
+        // ==========================================
+        // ADMIN BUTTON CLICK
+        // ==========================================
+
+        private void picAdminButton_Click(
+            object sender,
+            EventArgs e)
+        {
+            // Check permissions again before opening.
+            if (UserSession.UserId is not int userId ||
+                !QuizDatabase.IsUserAdmin(userId))
+            {
+                return;
+            }
+
+            AdminPanel adminPanel = new AdminPanel();
+            adminPanel.Dock = DockStyle.Fill;
+
+            Controls.Add(adminPanel);
+            adminPanel.BringToFront();
+        }
+
+        // ==========================================
+        // ADMIN BUTTON HOVER
+        // ==========================================
+
+        private void picAdminButton_MouseEnter(
+            object sender,
+            EventArgs e)
+        {
+            picAdminButton.Image =
+                Properties.Resources.button_admin_hover;
+        }
+
+        private void picAdminButton_MouseLeave(
+            object sender,
+            EventArgs e)
+        {
+            picAdminButton.Image =
+                Properties.Resources.button_admin;
         }
 
         // ==========================================

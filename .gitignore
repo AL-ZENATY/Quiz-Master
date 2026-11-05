@@ -6,3 +6,5 @@
 # Build output
 [Bb]in/
 [Oo]bj/
+# Local Git backup
+QuizMaster-git-backup/

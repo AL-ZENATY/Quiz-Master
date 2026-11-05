@@ -248,31 +248,53 @@ namespace QuizMaster.Forms
         // QUESTION IMAGE
         // ==========================================
 
+
         private void DisplayCarImage(QuizQuestion question)
         {
+            picCar.Image = null;
+
             if (string.IsNullOrWhiteSpace(question.ImagePath))
-            {
-                picCar.Image = null;
                 return;
-            }
 
             string resourceName =
                 System.IO.Path.GetFileNameWithoutExtension(
                     question.ImagePath);
 
-            if (string.IsNullOrWhiteSpace(resourceName))
-            {
-                picCar.Image = null;
-                return;
-            }
-
+            // First, try the existing embedded resources.
             object? resource =
                 Properties.Resources.ResourceManager.GetObject(
                     resourceName);
 
-            picCar.Image = resource as Image;
+            if (resource is Image embeddedImage)
+            {
+                picCar.Image = embeddedImage;
+            }
+            else
+            {
+                // Otherwise, try the image imported by the Admin Panel.
+                string imagePath = question.ImagePath;
+
+                if (!System.IO.Path.IsPathRooted(imagePath))
+                {
+                    imagePath = System.IO.Path.Combine(
+                        Environment.GetFolderPath(
+                            Environment.SpecialFolder.LocalApplicationData),
+                        "QuizMaster",
+                        "QuestionImages",
+                        System.IO.Path.GetFileName(imagePath));
+                }
+
+                if (System.IO.File.Exists(imagePath))
+                {
+                    // Load without keeping the original file locked.
+                    using var loadedImage = Image.FromFile(imagePath);
+                    picCar.Image = new Bitmap(loadedImage);
+                }
+            }
+
             picCar.SizeMode = PictureBoxSizeMode.Zoom;
         }
+
 
         private void ClearQuestionImages()
         {

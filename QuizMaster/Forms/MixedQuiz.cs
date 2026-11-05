@@ -271,6 +271,7 @@ namespace QuizMaster.Forms
         // QUESTION IMAGE
         // ==========================================
 
+
         private void DisplayQuestionImage(QuizQuestion question)
         {
             picMixed.Image = null;
@@ -285,12 +286,40 @@ namespace QuizMaster.Forms
             if (string.IsNullOrWhiteSpace(resourceName))
                 return;
 
-            picMixed.Image =
+            // First, try the existing embedded resources.
+            object? resource =
                 Properties.Resources.ResourceManager.GetObject(
-                    resourceName) as Image;
+                    resourceName);
+
+            if (resource is Image embeddedImage)
+            {
+                picMixed.Image = embeddedImage;
+            }
+            else
+            {
+                // Otherwise, load images imported by the Admin Panel.
+                string imagePath = question.ImagePath;
+
+                if (!Path.IsPathRooted(imagePath))
+                {
+                    imagePath = Path.Combine(
+                        Environment.GetFolderPath(
+                            Environment.SpecialFolder.LocalApplicationData),
+                        "QuizMaster",
+                        "QuestionImages",
+                        Path.GetFileName(imagePath));
+                }
+
+                if (File.Exists(imagePath))
+                {
+                    using var loadedImage = Image.FromFile(imagePath);
+                    picMixed.Image = new Bitmap(loadedImage);
+                }
+            }
 
             picMixed.SizeMode = PictureBoxSizeMode.Zoom;
         }
+
 
         private void ClearQuestionImages()
         {

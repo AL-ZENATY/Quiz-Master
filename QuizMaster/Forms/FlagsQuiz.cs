@@ -969,31 +969,52 @@ namespace QuizMaster
         // FLAG IMAGE DISPLAY
         // ==========================================
 
+
         private void DisplayFlagImage(QuizQuestion question)
         {
-            if (string.IsNullOrWhiteSpace(question.ImagePath))
-            {
-                picFlag.Image = null;
-                return;
-            }
+            picFlag.Image = null;
 
-            string country =
+            if (string.IsNullOrWhiteSpace(question.ImagePath))
+                return;
+
+            string resourceName =
                 System.IO.Path.GetFileNameWithoutExtension(
                     question.ImagePath);
 
-            if (string.IsNullOrWhiteSpace(country))
+            // First, look for an existing embedded resource.
+            object? resource =
+                Properties.Resources.ResourceManager.GetObject(
+                    resourceName);
+
+            if (resource is Image embeddedImage)
             {
-                picFlag.Image = null;
-                return;
+                picFlag.Image = embeddedImage;
+            }
+            else
+            {
+                // Otherwise, load an image imported by the Admin Panel.
+                string imagePath = question.ImagePath;
+
+                if (!System.IO.Path.IsPathRooted(imagePath))
+                {
+                    imagePath = System.IO.Path.Combine(
+                        Environment.GetFolderPath(
+                            Environment.SpecialFolder.LocalApplicationData),
+                        "QuizMaster",
+                        "QuestionImages",
+                        System.IO.Path.GetFileName(imagePath));
+                }
+
+                if (System.IO.File.Exists(imagePath))
+                {
+                    using var loadedImage = Image.FromFile(imagePath);
+                    picFlag.Image = new Bitmap(loadedImage);
+                }
             }
 
-            object? resource =
-                Properties.Resources.ResourceManager
-                    .GetObject(country);
-
-            picFlag.Image = resource as Image;
             picFlag.SizeMode = PictureBoxSizeMode.Zoom;
         }
+
 
         // ==========================================
         // DESIGNER LOAD EVENT

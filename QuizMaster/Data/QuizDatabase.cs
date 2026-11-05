@@ -711,6 +711,126 @@ namespace QuizMaster
                 : Convert.ToInt32(result);
         }
 
+
+        // ==========================================
+        // ADMIN - GET ALL ACCOUNTS
+        // ==========================================
+
+        public static List<(
+            int Id,
+            string Username,
+            string Email,
+            bool IsAdmin,
+            string CreatedAt)> GetAdminAccounts()
+        {
+            var accounts = new List<(
+                int Id,
+                string Username,
+                string Email,
+                bool IsAdmin,
+                string CreatedAt)>();
+
+            using var connection = GetConnection();
+            connection.Open();
+
+            using var command = connection.CreateCommand();
+
+            command.CommandText = @"
+                SELECT Id, Username, Email, IsAdmin, CreatedAt
+                FROM Users
+                ORDER BY Id ASC;";
+
+            using var reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                accounts.Add((
+                    reader.GetInt32(0),
+                    reader.GetString(1),
+                    reader.GetString(2),
+                    reader.GetInt32(3) == 1,
+                    reader.GetString(4)
+                ));
+            }
+
+            return accounts;
+        }
+
+        // ==========================================
+        // ADMIN - EDIT ACCOUNT
+        // ==========================================
+
+        public static void UpdateAccount(
+            int userId,
+            string username,
+            string email,
+            bool isAdmin)
+        {
+            using var connection = GetConnection();
+            connection.Open();
+
+            using var command = connection.CreateCommand();
+
+            command.CommandText = @"
+        UPDATE Users
+        SET Username = $username,
+            Email = $email,
+            IsAdmin = $isAdmin
+        WHERE Id = $id;";
+
+            command.Parameters.AddWithValue("$username", username);
+            command.Parameters.AddWithValue("$email", email);
+            command.Parameters.AddWithValue("$isAdmin", isAdmin ? 1 : 0);
+            command.Parameters.AddWithValue("$id", userId);
+
+            command.ExecuteNonQuery();
+        }
+
+        // ==========================================
+        // ADMIN - DELETE ACCOUNT
+        // ==========================================
+
+        public static void DeleteAccount(int userId)
+        {
+            using var connection = GetConnection();
+            connection.Open();
+
+            using var command = connection.CreateCommand();
+
+            command.CommandText = @"
+        DELETE FROM Users
+        WHERE Id = $id;";
+
+            command.Parameters.AddWithValue("$id", userId);
+
+            command.ExecuteNonQuery();
+        }
+
+
+        // ==========================================
+        // ADMIN - CHECK PERMISSIONS
+        // ==========================================
+
+        public static bool IsUserAdmin(int userId)
+        {
+            using var connection = GetConnection();
+            connection.Open();
+
+            using var command = connection.CreateCommand();
+
+            command.CommandText = @"
+                SELECT IsAdmin
+                FROM Users
+                WHERE Id = $userId";
+
+            command.Parameters.AddWithValue("$userId", userId);
+
+            object? result = command.ExecuteScalar();
+
+            return result != null &&
+                   Convert.ToInt32(result) == 1;
+        }
+
         // ==========================================
         // QUIZ QUESTIONS
         // ==========================================
@@ -871,6 +991,50 @@ namespace QuizMaster
                 WrongAnswer3 = reader.GetString(7)
             };
         }
+
+
+        // ==========================================
+        // ADMIN - GET ALL QUESTIONS
+        // ==========================================
+
+        public static List<QuizQuestion> GetAdminQuestions(
+            string category)
+        {
+            if (category != "Flags" && category != "Cars")
+            {
+                throw new ArgumentException(
+                    "Invalid question category.",
+                    nameof(category));
+            }
+
+            List<QuizQuestion> questions = new();
+
+            using var connection = GetConnection();
+            connection.Open();
+
+            using var command = connection.CreateCommand();
+
+            command.CommandText = @"
+                SELECT Id, Category, QuestionText, ImagePath,
+                       CorrectAnswer, WrongAnswer1,
+                       WrongAnswer2, WrongAnswer3
+                FROM Questions
+                WHERE Category = $category COLLATE NOCASE
+                ORDER BY Id ASC;";
+
+            command.Parameters.AddWithValue(
+                "$category", category);
+
+            using var reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                questions.Add(ReadQuestion(reader));
+            }
+
+            return questions;
+        }
+
 
         // ==========================================
         // ADMIN - ADD QUESTION
